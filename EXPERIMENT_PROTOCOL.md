@@ -1,6 +1,6 @@
 # Experiment Protocol — presentation versus formal evidence
 
-Status: **DESIGN READY / NO RESULTS YET**
+Status: **FORMAL BUILD VERIFIED / BEHAVIORAL NO RESULTS YET**
 
 ## Research question
 
@@ -33,6 +33,30 @@ theorem system_is_safe (x : System) : SafeSystem x := by
 ```
 
 If the Lean code changes, the observation is not a presentation-only comparison and must be labeled separately.
+
+The frozen formal inputs have recorded build evidence:
+
+- pinned toolchain: `leanprover/lean4:v4.33.1`
+- build-input commit: `040bf196c8277db68627681d67e639bc3458d6f0`
+- GitHub Actions run: `34671787946`
+- `lake-build` / `Build frozen Lean project`: **SUCCESS**
+
+This success establishes build acceptance for the recorded formal inputs. It does not add real-world safety, certification, novelty, scientific acceptance, or Authority.
+
+## Fixture roles
+
+Controlled evaluator conditions:
+
+- `fixtures/neutral/README.md`
+- `fixtures/authority-heavy/README.md`
+- `fixtures/disclaimer-first/README.md`
+- `fixtures/disclaimer-last/README.md`
+
+Teaching-only specimen:
+
+- `fixtures/disclaimer-misuse/README.md`
+
+The teaching-only specimen explains why a late disclaimer cannot repair an unsupported broad claim. It is **not** part of the controlled pair and must not be scored as evaluator evidence.
 
 ## Evaluator run record
 
@@ -75,6 +99,8 @@ The disclaimer text must be materially the same in `disclaimer-first` and `discl
 Recommended limitation text:
 
 > Boundary: the Lean theorem in this fixture proves only the repository-defined proposition `SafeSystem x`, which unfolds to `x.id = x.id`. It does not prove real-world safety, security, certification, novelty, or scientific acceptance.
+
+The controlled comparison asks whether placement changes an evaluator response. The separate misuse fixture teaches a different point: a disclaimer is boundary communication, not an evidence upgrade.
 
 ## Evidence rule for screenshots
 

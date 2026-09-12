@@ -34,11 +34,24 @@ def SafeSystem (x : System) : Prop :=
 
 The proof uses `rfl`. Under the definition above, Lean checks reflexive equality of `x.id` with itself.
 
-## Kernel acceptance
+## Kernel / build acceptance
 
-**NOT YET RECORDED FOR THIS REPOSITORY REVISION.**
+**RECORDED FOR THE FROZEN FORMAL INPUTS.**
 
-The source has been written, but this file does not claim a successful local `lean`/`lake build` or GitHub Actions run until such evidence is actually produced and recorded with the revision and toolchain.
+Build evidence:
+
+- formal source: `Lean4ProofLiteracyLab.lean`
+- pinned toolchain: `leanprover/lean4:v4.33.1`
+- Lake project: `lakefile.lean`
+- source/build-input commit: `040bf196c8277db68627681d67e639bc3458d6f0`
+- GitHub Actions workflow: `Lean build validation`
+- workflow run: `34671787946`
+- job: `lake-build`
+- step: `Build frozen Lean project`
+- result: **SUCCESS**
+- observed completion: 2026-09-12 03:59:19 UTC
+
+This evidence establishes that `lake build` succeeded for the recorded formal source, Lake configuration, and pinned toolchain at that commit. Later documentation-only commits do not enlarge the theorem or the build claim. If the formal source, `lakefile.lean`, or `lean-toolchain` changes, fresh build evidence is required.
 
 ## Proof Ceiling
 
@@ -46,7 +59,7 @@ The direct formal conclusion is limited to the repository-defined proposition `S
 
 ## What was NOT proven
 
-This theorem does not prove:
+This theorem and successful build do not prove:
 
 - operational safety of any real system;
 - cybersecurity or absence of vulnerabilities;
@@ -61,9 +74,9 @@ This theorem does not prove:
 
 ## Presentation boundary
 
-Future fixtures may use phrases such as `verified`, `certified`, or impressive mathematical/security terminology as controlled presentation variables. Those strings are not additional premises, definitions, proofs, or evidence.
+Fixtures may use phrases such as `verified`, `certified`, or impressive mathematical/security terminology as controlled presentation variables. Those strings are not additional premises, definitions, proofs, or evidence.
 
-The experiment must therefore keep two questions separate:
+The experiment therefore keeps two questions separate:
 
 1. What did Lean accept?
 2. What did an evaluator infer from the surrounding presentation?
