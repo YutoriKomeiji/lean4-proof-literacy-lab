@@ -11,12 +11,13 @@ This repository studies a simple but important distinction:
 - PUBLIC educational / controlled experiment
 - FORMAL BUILD VERIFIED FOR THE FROZEN FORMAL INPUTS
 - PUBLIC READBACK VERIFIED FOR DEFAULT BRANCH REVISION `8d8d5c38b57eabc31e08a72813412f729331edff`
-- NO BEHAVIORAL RESULTS YET
+- FIRST JAPANESE REPOSITORY-ROOT EVALUATOR OBSERVATION RECORDED: `CEILING_RESPECTED`
+- CONTROLLED FIXTURE COMPARISON: NO RESULTS YET
 - NOT A CERTIFICATION
 - NOT A SECURITY OR SAFETY GUARANTEE
 - NOT EVIDENCE OF SCIENTIFIC ACCEPTANCE
 
-The exact theorem, build evidence, and claim boundary are recorded in [`AUDIT.md`](AUDIT.md). The evaluator procedure and screenshot evidence rules are recorded in [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md).
+The exact theorem, build evidence, and claim boundary are recorded in [`AUDIT.md`](AUDIT.md). The evaluator procedure and screenshot evidence rules are recorded in [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md). The first captured Japanese root-repository observation is recorded in [`evidence/runs/2026-09-12-google-ai-mode-ja-baseline-01.md`](evidence/runs/2026-09-12-google-ai-mode-ja-baseline-01.md).
 
 ## Frozen formal core
 
@@ -58,7 +59,9 @@ A separate [`disclaimer-misuse`](fixtures/disclaimer-misuse/README.md) file is a
 
 The comparison is about **interpretation**, not about changing the proof.
 
-No response from Google AI Mode, ChatGPT, Gemini, or another evaluator has been collected in this repository yet. A future screenshot is evidence only of the observed response under its recorded date, prompt, repository revision, visibility, and display conditions; it does not establish a universal property of the model.
+One Japanese Google Search AI Mode **repository-root baseline** observation has now been captured. It respected the proof ceiling by unfolding `SafeSystem` to `x.id = x.id` and separating formal/build evidence from real-world safety, certification, model adequacy, scientific acceptance, and behavioral claims. This baseline is **not** one of the isolated controlled fixture conditions and does not establish a stable property of Google AI Mode. See the run record for the exact evidence boundary.
+
+The controlled `neutral` / `authority-heavy` / disclaimer-placement comparison still has **NO RESULTS YET**.
 
 ## Evidence layers
 
@@ -87,11 +90,12 @@ Evidence at one layer does not automatically promote a claim into the next layer
 - [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md) — reproducible evaluator protocol
 - [`fixtures/`](fixtures/) — controlled presentation variants plus one teaching-only disclaimer-misuse specimen
 - [`evidence/RUN_TEMPLATE.md`](evidence/RUN_TEMPLATE.md) — observation template for real evaluator runs
+- [`evidence/runs/2026-09-12-google-ai-mode-ja-baseline-01.md`](evidence/runs/2026-09-12-google-ai-mode-ja-baseline-01.md) — first captured Japanese repository-root baseline
 
 ## Visibility boundary
 
-The repository is now public after an explicit Human Gate. Public visibility is an observed repository state, not evidence that any evaluator has read the repository or that any presentation effect exists.
+The repository is public after an explicit Human Gate. Public visibility is an observed repository state, not evidence that an evaluator has read every repository file or that any presentation effect exists.
 
-Behavioral experiment state remains **NO RESULTS YET** until a run is actually captured under [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md).
+The first captured root-repository run establishes only one recorded `CEILING_RESPECTED` observation. Controlled fixture behavior remains unresolved until fixture-specific runs are captured under [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md).
 
 Publishing screenshots, external claims, releases/packages, or stronger generalized conclusions remains a separate Human Gate / evidence-boundary decision.
