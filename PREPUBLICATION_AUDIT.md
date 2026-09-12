@@ -1,6 +1,6 @@
 # PREPUBLICATION AUDIT — standalone surfaces
 
-Status: **IN PROGRESS / PRIVATE / HUMAN GATE NOT YET REQUESTED**
+Status: **PREPUBLICATION_READY / HUMAN_GATE_PENDING / PRIVATE**
 
 Purpose: verify that each repository surface can be inspected out of context without silently converting presentation language into evidence or Authority, while preserving the controlled variables needed for the later evaluator experiment.
 
@@ -27,7 +27,7 @@ Formal build evidence is recorded in [`AUDIT.md`](AUDIT.md). The successful buil
 
 Result: **PASS after repair**.
 
-Repair in this pass:
+Repair completed:
 
 - replaced stale scaffold language with the current state `FORMAL BUILD VERIFIED / BEHAVIORAL NO RESULTS YET`;
 - linked directly to `AUDIT.md`, `EXPERIMENT_PROTOCOL.md`, the frozen Lean source, fixtures, and run template;
@@ -84,7 +84,8 @@ Current observations support:
 - a frozen Lean theorem and definition exist;
 - `lake build` succeeded for the exact recorded formal inputs;
 - presentation fixtures exist and can be compared;
-- the disclaimer-misuse specimen demonstrates a rhetorical/evidence-boundary concept.
+- the disclaimer-misuse specimen demonstrates a rhetorical/evidence-boundary concept;
+- the fixture roles are bound into the Zenn/Book planning surface on Draft PR #100 in `YutoriKomeiji/zenn-content`.
 
 Current observations do **not** support:
 
@@ -97,13 +98,28 @@ Current observations do **not** support:
 
 Behavioral state remains **NO RESULTS YET**.
 
-## Remaining preparation gates
+## Preparation gates — closed
 
-Before requesting public visibility:
+- branch readback of the repaired root README: **PASS**;
+- standalone audit readback: **PASS**;
+- exact fixture-role mapping into Zenn / future Book planning: **PASS** via `drafts/lean4-learning-series/COMPANION_LAB_MAP.md` on Zenn Draft PR #100;
+- formal build evidence binding: **PASS** in `AUDIT.md`;
+- visibility boundary: **PASS — still PRIVATE**.
 
-1. verify branch readback of the repaired root README and this audit;
-2. bind the repository paths into the Zenn/Book source map so later prose can cite the correct fixture role;
-3. ensure the exact public experiment revision is recorded before the first evaluator run;
-4. stop and report `PREPUBLICATION_READY / HUMAN_GATE_PENDING` before any visibility change.
+## Human Gate / next allowed transition
 
-No public visibility, publication, merge, Release, package publication, or canonical RP* promotion is authorized by this audit.
+Preparation has reached `PREPUBLICATION_READY / HUMAN_GATE_PENDING`.
+
+The next transition requires the Master to decide whether the companion repository may be prepared on its default branch and made public for the planned Google AI Mode repository-reading experiment.
+
+If approved later:
+
+1. merge/adopt the reviewed candidate to the repository default branch only under the new authorization;
+2. record the exact public/default-branch revision;
+3. change visibility only under the explicit Human Gate;
+4. verify the public readback;
+5. only then begin evaluator runs and capture raw responses/screenshots.
+
+This audit itself authorizes none of those actions.
+
+No public visibility, publication, merge, Release, package publication, or canonical RP* promotion has been performed.
