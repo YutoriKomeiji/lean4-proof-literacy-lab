@@ -1,12 +1,14 @@
 name: Lean build validation
 
 on:
-  push:
-    branches:
-      - dan-106-pin-lean-toolchain
   pull_request:
     branches:
       - main
+    paths:
+      - Lean4ProofLiteracyLab.lean
+      - lakefile.lean
+      - lean-toolchain
+      - .github/workflows/lean-build.yml
   workflow_dispatch:
 
 permissions:
