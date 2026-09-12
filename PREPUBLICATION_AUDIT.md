@@ -1,8 +1,8 @@
 # PREPUBLICATION AUDIT — standalone surfaces
 
-Status: **PREPUBLICATION_READY / HUMAN_GATE_PENDING / PRIVATE**
+Status: **PUBLIC TRANSITION COMPLETED / PUBLIC READBACK VERIFIED / BEHAVIORAL NO RESULTS YET**
 
-Purpose: verify that each repository surface can be inspected out of context without silently converting presentation language into evidence or Authority, while preserving the controlled variables needed for the later evaluator experiment.
+Purpose: verify that each repository surface can be inspected out of context without silently converting presentation language into evidence or Authority, while preserving the controlled variables needed for the evaluator experiment.
 
 ## Frozen formal object
 
@@ -25,14 +25,15 @@ Formal build evidence is recorded in [`AUDIT.md`](AUDIT.md). The successful buil
 
 ### Root `README.md`
 
-Result: **PASS after repair**.
+Result: **PASS after public-state synchronization**.
 
-Repair completed:
+Current repair:
 
-- replaced stale scaffold language with the current state `FORMAL BUILD VERIFIED / BEHAVIORAL NO RESULTS YET`;
-- linked directly to `AUDIT.md`, `EXPERIMENT_PROTOCOL.md`, the frozen Lean source, fixtures, and run template;
-- made the private-to-public visibility transition an explicit Human Gate;
-- kept certification, safety/security guarantee, scientific acceptance, and evaluator-effect claims outside the evidence ceiling.
+- records the repository as public only after observed visibility/readback;
+- records exact adopted default-branch revision `8d8d5c38b57eabc31e08a72813412f729331edff`;
+- keeps `FORMAL BUILD VERIFIED / BEHAVIORAL NO RESULTS YET` explicit;
+- links directly to `AUDIT.md`, `EXPERIMENT_PROTOCOL.md`, the frozen Lean source, fixtures, and run template;
+- keeps certification, safety/security guarantee, scientific acceptance, and evaluator-effect claims outside the evidence ceiling.
 
 ### `fixtures/neutral/README.md`
 
@@ -85,6 +86,8 @@ Current observations support:
 - `lake build` succeeded for the exact recorded formal inputs;
 - presentation fixtures exist and can be compared;
 - the disclaimer-misuse specimen demonstrates a rhetorical/evidence-boundary concept;
+- the repository visibility is public;
+- the default-branch candidate was adopted at revision `8d8d5c38b57eabc31e08a72813412f729331edff` before the visibility transition;
 - the fixture roles are bound into the Zenn/Book planning surface on Draft PR #100 in `YutoriKomeiji/zenn-content`.
 
 Current observations do **not** support:
@@ -92,34 +95,31 @@ Current observations do **not** support:
 - real-world system safety, security, reliability, certification, or regulatory approval;
 - adequacy of the toy model for a real system;
 - novelty or scientific acceptance;
-- a claim that Google AI Mode or another evaluator is misled by these cues;
+- a claim that Google AI Mode or another evaluator has read or been misled by these cues;
 - a claim that disclaimer placement changes evaluator behavior;
 - legal conclusions about disclaimer sufficiency.
 
 Behavioral state remains **NO RESULTS YET**.
 
-## Preparation gates — closed
+## Preparation / publication gates
 
-- branch readback of the repaired root README: **PASS**;
-- standalone audit readback: **PASS**;
-- exact fixture-role mapping into Zenn / future Book planning: **PASS** via `drafts/lean4-learning-series/COMPANION_LAB_MAP.md` on Zenn Draft PR #100;
+- branch/default-branch adoption: **PASS**;
+- standalone audit: **PASS**;
 - formal build evidence binding: **PASS** in `AUDIT.md`;
-- visibility boundary: **PASS — still PRIVATE**.
+- explicit Human Gate for public visibility: **SATISFIED by Master authorization**;
+- observed repository visibility: **PUBLIC**;
+- public repository API/readback: **PASS**;
+- behavioral evaluator evidence: **NOT YET COLLECTED**.
 
-## Human Gate / next allowed transition
+## Next allowed transition
 
-Preparation has reached `PREPUBLICATION_READY / HUMAN_GATE_PENDING`.
+The next research transition is not a proof or publication claim. It is a bounded evaluator observation:
 
-The next transition requires the Master to decide whether the companion repository may be prepared on its default branch and made public for the planned Google AI Mode repository-reading experiment.
+1. use the exact public repository revision/fixture under test;
+2. use the fixed neutral prompt from `EXPERIMENT_PROTOCOL.md` where applicable;
+3. capture raw response before interpretation;
+4. record product/mode, time, repository revision, visibility, fixture, prompt, browsing/read indication, transcript, screenshot filenames, and outcome code;
+5. retain null, ceiling-respecting, contrary, or unreadable outcomes;
+6. do not generalize a single run into a stable model property.
 
-If approved later:
-
-1. merge/adopt the reviewed candidate to the repository default branch only under the new authorization;
-2. record the exact public/default-branch revision;
-3. change visibility only under the explicit Human Gate;
-4. verify the public readback;
-5. only then begin evaluator runs and capture raw responses/screenshots.
-
-This audit itself authorizes none of those actions.
-
-No public visibility, publication, merge, Release, package publication, or canonical RP* promotion has been performed.
+No evaluator result is claimed by this audit itself.

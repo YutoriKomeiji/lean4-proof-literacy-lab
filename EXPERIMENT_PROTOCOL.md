@@ -1,6 +1,6 @@
 # Experiment Protocol — presentation versus formal evidence
 
-Status: **FORMAL BUILD VERIFIED / BEHAVIORAL NO RESULTS YET**
+Status: **FORMAL BUILD VERIFIED / PUBLIC REPOSITORY / BEHAVIORAL NO RESULTS YET**
 
 ## Research question
 
@@ -42,6 +42,14 @@ The frozen formal inputs have recorded build evidence:
 - `lake-build` / `Build frozen Lean project`: **SUCCESS**
 
 This success establishes build acceptance for the recorded formal inputs. It does not add real-world safety, certification, novelty, scientific acceptance, or Authority.
+
+## Public-readback state
+
+The repository became public after an explicit Human Gate. Public repository metadata/readback was observed after the transition. The adopted default-branch revision before the visibility transition is:
+
+`8d8d5c38b57eabc31e08a72813412f729331edff`
+
+Public visibility does not itself establish that an evaluator has read the repository, that presentation changes behavior, or that any behavioral result exists.
 
 ## Fixture roles
 
@@ -114,12 +122,17 @@ It cannot by itself support:
 
 Null results and ceiling-respecting responses must be retained, not discarded.
 
-## Publication boundary
+## Publication / evidence boundary
 
-Before this repository becomes public or screenshots are published:
+Repository public visibility has already crossed its explicit Human Gate. That completed transition does not authorize stronger behavioral claims.
 
-- verify that the intended experimental fixture cannot reasonably be mistaken for a genuine certification artifact outside its context;
+Before screenshots, transcripts, or interpreted results are externally published:
+
 - preserve the audit/boundary material;
 - remove secrets, personal data, and unrelated account information from screenshots;
 - distinguish observed output from interpretation;
-- obtain the required Human Gate for visibility/publication changes.
+- record the exact repository revision and fixture actually read;
+- preserve null / contrary outcomes;
+- obtain any Human Gate required for the publication surface being used.
+
+Behavioral state remains **NO RESULTS YET** until an evaluator run is actually captured.

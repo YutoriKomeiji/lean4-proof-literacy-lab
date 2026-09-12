@@ -1,6 +1,6 @@
 # Lean 4 Proof Literacy Lab
 
-Private companion laboratory for the Japanese educational series **「中学生でもわかる Lean 4」**.
+Public companion laboratory for the Japanese educational series **「中学生でもわかる Lean 4」**.
 
 This repository studies a simple but important distinction:
 
@@ -8,9 +8,9 @@ This repository studies a simple but important distinction:
 
 ## Current status
 
-- PRIVATE research fixture
-- EDUCATIONAL / CONTROLLED EXPERIMENT
+- PUBLIC educational / controlled experiment
 - FORMAL BUILD VERIFIED FOR THE FROZEN FORMAL INPUTS
+- PUBLIC READBACK VERIFIED FOR DEFAULT BRANCH REVISION `8d8d5c38b57eabc31e08a72813412f729331edff`
 - NO BEHAVIORAL RESULTS YET
 - NOT A CERTIFICATION
 - NOT A SECURITY OR SAFETY GUARANTEE
@@ -90,6 +90,8 @@ Evidence at one layer does not automatically promote a claim into the next layer
 
 ## Visibility boundary
 
-The repository remains private during preparation. Public visibility is required for the planned external Google AI Mode repository-reading experiment, but changing repository visibility is a Human Gate action.
+The repository is now public after an explicit Human Gate. Public visibility is an observed repository state, not evidence that any evaluator has read the repository or that any presentation effect exists.
 
-When preparation is complete, work stops at `PREPUBLICATION_READY / HUMAN_GATE_PENDING`. No visibility change is implied by formal build success or by completion of the fixture set.
+Behavioral experiment state remains **NO RESULTS YET** until a run is actually captured under [`EXPERIMENT_PROTOCOL.md`](EXPERIMENT_PROTOCOL.md).
+
+Publishing screenshots, external claims, releases/packages, or stronger generalized conclusions remains a separate Human Gate / evidence-boundary decision.
